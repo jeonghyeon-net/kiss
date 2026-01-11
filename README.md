@@ -17,7 +17,9 @@ A simple macOS menu bar app that lets you switch keyboard input sources with cus
 
 ## Screenshots
 
-<!-- Add your screenshots here -->
+<p align="center">
+  <img src="resources/screenshot.png" alt="KISS Screenshot" width="400">
+</p>
 
 
 
