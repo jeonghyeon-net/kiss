@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Launch at Login",
+  "showNotification": "Show Notification on Switch",
+  "quit": "Quit",
+  "setShortcut": "Set Shortcut",
+  "recording": "Recording...",
+  "noInputSources": "No input sources found.",
+  "noInputSourcesHint": "Please add a keyboard in System Preferences."
+}

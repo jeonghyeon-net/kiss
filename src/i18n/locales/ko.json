@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "로그인 시 자동 시작",
+  "showNotification": "전환 시 알림 표시",
+  "quit": "종료",
+  "setShortcut": "단축키 설정",
+  "recording": "키 입력...",
+  "noInputSources": "입력 소스를 찾을 수 없습니다.",
+  "noInputSourcesHint": "시스템 환경설정에서 키보드를 추가해주세요."
+}
