@@ -1,11 +1,25 @@
 # KISS
 
-**K**eyboard **I**nput **S**ource **S**witcher for macOS
+<p align="center">
+  <img src="resources/icon.png" alt="KISS Icon" width="128" height="128">
+</p>
 
-![macOS](https://img.shields.io/badge/macOS-10.12+-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
+<p align="center">
+  <strong>K</strong>eyboard <strong>I</strong>nput <strong>S</strong>ource <strong>S</strong>witcher for macOS
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/macOS-10.12+-blue" alt="macOS">
+  <img src="https://img.shields.io/badge/license-MIT-green" alt="License">
+</p>
 
 A simple macOS menu bar app that lets you switch keyboard input sources with custom keyboard shortcuts.
+
+## Screenshots
+
+<!-- Add your screenshots here -->
+
+
 
 ## Features
 
