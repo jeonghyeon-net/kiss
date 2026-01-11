@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Lancer au démarrage",
+  "showNotification": "Afficher une notification lors du changement",
+  "quit": "Quitter",
+  "setShortcut": "Définir le raccourci",
+  "recording": "Enregistrement...",
+  "noInputSources": "Aucune source d'entrée trouvée.",
+  "noInputSourcesHint": "Ajoutez un clavier dans les Préférences Système."
+}

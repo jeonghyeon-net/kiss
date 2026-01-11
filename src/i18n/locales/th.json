@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "เปิดเมื่อเข้าสู่ระบบ",
+  "showNotification": "แสดงการแจ้งเตือนเมื่อสลับ",
+  "quit": "ออก",
+  "setShortcut": "ตั้งค่าทางลัด",
+  "recording": "กำลังบันทึก...",
+  "noInputSources": "ไม่พบแหล่งป้อนข้อมูล",
+  "noInputSourcesHint": "กรุณาเพิ่มแป้นพิมพ์ในการตั้งค่าระบบ"
+}

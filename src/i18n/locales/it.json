@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Avvia al login",
+  "showNotification": "Mostra notifica al cambio",
+  "quit": "Esci",
+  "setShortcut": "Imposta scorciatoia",
+  "recording": "Registrazione...",
+  "noInputSources": "Nessuna sorgente di input trovata.",
+  "noInputSourcesHint": "Aggiungi una tastiera nelle Preferenze di Sistema."
+}

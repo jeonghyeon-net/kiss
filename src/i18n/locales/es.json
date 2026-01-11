@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Iniciar al arrancar",
+  "showNotification": "Mostrar notificación al cambiar",
+  "quit": "Salir",
+  "setShortcut": "Configurar atajo",
+  "recording": "Grabando...",
+  "noInputSources": "No se encontraron fuentes de entrada.",
+  "noInputSourcesHint": "Agrega un teclado en Preferencias del Sistema."
+}

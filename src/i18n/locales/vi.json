@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Khởi động khi đăng nhập",
+  "showNotification": "Hiển thị thông báo khi chuyển",
+  "quit": "Thoát",
+  "setShortcut": "Đặt phím tắt",
+  "recording": "Đang ghi...",
+  "noInputSources": "Không tìm thấy nguồn nhập.",
+  "noInputSourcesHint": "Vui lòng thêm bàn phím trong Tùy chọn Hệ thống."
+}

@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Bei Anmeldung starten",
+  "showNotification": "Benachrichtigung beim Wechseln anzeigen",
+  "quit": "Beenden",
+  "setShortcut": "Tastenkürzel festlegen",
+  "recording": "Aufnahme...",
+  "noInputSources": "Keine Eingabequellen gefunden.",
+  "noInputSourcesHint": "Fügen Sie eine Tastatur in den Systemeinstellungen hinzu."
+}

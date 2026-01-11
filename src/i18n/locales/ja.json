@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "ログイン時に起動",
+  "showNotification": "切替時に通知を表示",
+  "quit": "終了",
+  "setShortcut": "ショートカット設定",
+  "recording": "入力中...",
+  "noInputSources": "入力ソースが見つかりません。",
+  "noInputSourcesHint": "システム環境設定でキーボードを追加してください。"
+}

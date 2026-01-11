@@ -29,24 +29,31 @@ const store = new Store<StoreSchema>({
   },
 })
 
-const translations = {
-  ko: {
-    notificationBody: (name: string) => `입력 소스 변경: ${name}`,
-  },
-  en: {
-    notificationBody: (name: string) => `Input source changed: ${name}`,
-  },
+const translations: Record<string, { notificationBody: (name: string) => string }> = {
+  ko: { notificationBody: (name) => `입력 소스 변경: ${name}` },
+  en: { notificationBody: (name) => `Input source changed: ${name}` },
+  ja: { notificationBody: (name) => `入力ソース変更: ${name}` },
+  zh: { notificationBody: (name) => `输入源已更改: ${name}` },
+  es: { notificationBody: (name) => `Fuente de entrada cambiada: ${name}` },
+  fr: { notificationBody: (name) => `Source d'entrée changée: ${name}` },
+  de: { notificationBody: (name) => `Eingabequelle geändert: ${name}` },
+  pt: { notificationBody: (name) => `Fonte de entrada alterada: ${name}` },
+  ru: { notificationBody: (name) => `Источник ввода изменён: ${name}` },
+  it: { notificationBody: (name) => `Sorgente di input cambiata: ${name}` },
+  vi: { notificationBody: (name) => `Đã đổi nguồn nhập: ${name}` },
+  th: { notificationBody: (name) => `เปลี่ยนแหล่งป้อนข้อมูล: ${name}` },
+  ar: { notificationBody: (name) => `تم تغيير مصدر الإدخال: ${name}` },
 }
 
-function getLocale(): 'ko' | 'en' {
+function getLocale(): string {
   const locale = app.getLocale()
-  return locale.startsWith('ko') ? 'ko' : 'en'
+  const lang = locale.split('-')[0]
+  return lang in translations ? lang : 'en'
 }
 
-function t(key: keyof typeof translations.en, ...args: string[]): string {
+function t(key: 'notificationBody', ...args: string[]): string {
   const locale = getLocale()
-  const fn = translations[locale][key]
-  return fn(...args)
+  return translations[locale][key](...args)
 }
 
 let mainWindow: BrowserWindow | null = null

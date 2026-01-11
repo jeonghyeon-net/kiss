@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "登录时启动",
+  "showNotification": "切换时显示通知",
+  "quit": "退出",
+  "setShortcut": "设置快捷键",
+  "recording": "录入中...",
+  "noInputSources": "未找到输入源。",
+  "noInputSourcesHint": "请在系统偏好设置中添加键盘。"
+}

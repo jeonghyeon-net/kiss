@@ -29,7 +29,10 @@ A simple macOS menu bar app that lets you switch keyboard input sources with cus
 - Menu bar (tray) integration
 - Notification on input source change
 - Launch at login
-- Multi-language support (Korean / English)
+- Multi-language support (auto-detected from system)
+  - English, Korean, Japanese, Chinese (Simplified/Traditional)
+  - Spanish, French, German, Portuguese, Italian, Russian
+  - Vietnamese, Thai, Arabic
 - Lightweight and fast
 
 ## Installation

@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "تشغيل عند تسجيل الدخول",
+  "showNotification": "إظهار إشعار عند التبديل",
+  "quit": "إنهاء",
+  "setShortcut": "تعيين اختصار",
+  "recording": "جاري التسجيل...",
+  "noInputSources": "لم يتم العثور على مصادر إدخال.",
+  "noInputSourcesHint": "يرجى إضافة لوحة مفاتيح في تفضيلات النظام."
+}

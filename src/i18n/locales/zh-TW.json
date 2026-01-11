@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "登入時啟動",
+  "showNotification": "切換時顯示通知",
+  "quit": "結束",
+  "setShortcut": "設定快捷鍵",
+  "recording": "輸入中...",
+  "noInputSources": "找不到輸入來源。",
+  "noInputSourcesHint": "請在系統偏好設定中新增鍵盤。"
+}

@@ -1,0 +1,9 @@
+{
+  "launchAtLogin": "Iniciar no login",
+  "showNotification": "Mostrar notificação ao trocar",
+  "quit": "Sair",
+  "setShortcut": "Definir atalho",
+  "recording": "Gravando...",
+  "noInputSources": "Nenhuma fonte de entrada encontrada.",
+  "noInputSourcesHint": "Adicione um teclado nas Preferências do Sistema."
+}
