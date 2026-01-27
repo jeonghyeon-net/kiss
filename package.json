@@ -1,6 +1,6 @@
 {
   "name": "kiss",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "KISS - Keyboard Input Source Switcher for macOS",
   "main": "dist-electron/main.js",
   "author": "KISS contributors",
