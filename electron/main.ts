@@ -60,6 +60,10 @@ let mainWindow: BrowserWindow | null = null
 let tray: Tray | null = null
 const inputSourceManager = new InputSourceManager()
 
+// Debounce for input source switching
+const DEBOUNCE_MS = 50
+let lastSwitchTime = 0
+
 const DIST = join(__dirname, '../dist')
 const ELECTRON_DIST = __dirname
 
@@ -146,6 +150,10 @@ function registerShortcuts() {
 
     try {
       globalShortcut.register(shortcut, () => {
+        const now = Date.now()
+        if (now - lastSwitchTime < DEBOUNCE_MS) return
+        lastSwitchTime = now
+
         const success = inputSourceManager.selectInputSource(inputSourceId)
         if (success && store.get('showNotification')) {
           const sources = inputSourceManager.getInputSources()

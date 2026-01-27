@@ -49,7 +49,20 @@ func getInputSources() -> [InputSource] {
     return sources
 }
 
+func getCurrentInputSourceId() -> String? {
+    guard let source = TISCopyCurrentKeyboardInputSource()?.takeRetainedValue(),
+          let idPtr = TISGetInputSourceProperty(source, kTISPropertyInputSourceID) else {
+        return nil
+    }
+    return Unmanaged<CFString>.fromOpaque(idPtr).takeUnretainedValue() as String
+}
+
 func selectInputSource(id: String) -> Bool {
+    // 이미 해당 입력 소스면 스킵
+    if getCurrentInputSourceId() == id {
+        return true
+    }
+
     guard let sourceList = TISCreateInputSourceList(nil, false)?.takeRetainedValue() as? [TISInputSource] else {
         return false
     }
@@ -61,8 +74,21 @@ func selectInputSource(id: String) -> Bool {
         let sourceId = Unmanaged<CFString>.fromOpaque(idPtr).takeUnretainedValue() as String
 
         if sourceId == id {
-            let result = TISSelectInputSource(source)
-            return result == noErr
+            // 최대 3번 재시도
+            for _ in 0..<3 {
+                let result = TISSelectInputSource(source)
+                if result != noErr {
+                    return false
+                }
+
+                // 전환 완료 대기 후 확인
+                usleep(10000) // 10ms
+
+                if getCurrentInputSourceId() == id {
+                    return true
+                }
+            }
+            return false
         }
     }
 
@@ -74,7 +100,8 @@ let args = CommandLine.arguments
 if args.count < 2 {
     print("Usage: kawa-helper <command> [args]")
     print("Commands:")
-    print("  list    - List all input sources as JSON")
+    print("  list      - List all input sources as JSON")
+    print("  current   - Get current input source ID")
     print("  select <id> - Select input source by ID")
     exit(1)
 }
@@ -88,6 +115,14 @@ case "list":
     if let jsonData = try? encoder.encode(sources),
        let jsonString = String(data: jsonData, encoding: .utf8) {
         print(jsonString)
+    }
+
+case "current":
+    if let currentId = getCurrentInputSourceId() {
+        print(currentId)
+    } else {
+        print("Error: Could not get current input source")
+        exit(1)
     }
 
 case "select":
